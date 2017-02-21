@@ -1,0 +1,127 @@
+" MasterJ  .vimrc config 
+
+"============================= Code style ==========================
+"set cindent
+"set smartindent
+"set autoindent
+"set nowrap
+"set ff=unix
+"set bg=dark
+"set ruler
+"set ts=4
+"set shiftwidth=4
+"set ai
+
+"============================= GNU Code style ==========================
+"set cinoptions={.5s,:.5s,+.5s,t0,g0,^-2,e-2,n-2,p2s,(0,=.5s
+set formatoptions=croql
+set cindent
+
+set tabstop=2
+"set softtabstop=4
+set shiftwidth=2
+set expandtab
+  
+set smartindent
+set autoindent
+set nowrap
+set bg=dark
+set ruler
+set number
+" =========================== masterj color ============================
+"colo 256-jungle
+"colo blue 
+"colo blackbeauty
+colo darkblack
+"============================= Bundle  =================================
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+" My Bundles here:
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+"Original repos on  GitHub
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp':'vim/'}
+Bundle 'tpope/vim-rails.git'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'file:///Users/gmarik/path/to/plugin'
+
+filetype plugin indent on
+
+language en_US.UTF-8
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+
+"============================= INDENT =================================
+map <F4> <c-w><c-w> 
+
+map <F5> :Tlist<CR>
+
+"============================== CTAGS =================================
+
+set tags=./tags,tags,../tags,../../tags,../../../tags,../../../../tags,../../../../../tags,../../../../../../../tags,../../../../../../../../tags,../../../../../../../../../tags
+
+"============================= cscope =================================
+
+set csprg=/usr/bin/cscope
+set csto=0
+set cst
+set nocsverb
+
+if filereadable("./cscope.out")
+	cs add cscope.out
+" else
+" 	cs add /mc/DEV-KOREKHAN/current/cscope.out
+endif
+syntax on
+set csverb
+
+func! Css( )
+	let css = expand("<cword>")
+"	new
+	exe "cs find s ".css
+	if getline(1) == " "
+		exe "q!"
+	endif
+endfunc
+"nmap ,css :call Css( )<cr>
+nmap <F2> :call Css( )<cr>
+
+func! Csc( )
+	let csc = expand("<cword>")
+"	new
+	exe "cs find c ".csc
+	if getline(1) == " "
+		exe "q!"
+	endif
+endfunc
+nmap <F3> :call Csc( )<cr>
+
+"func! Csd()
+"	let csd = expand("<cword>")
+"	new
+"	exe "csc find d ".csd
+"	if getline(1) == " "
+"		exe "q!"
+"	endif
+"endfunc
+"nmap <F4> :call Csd( )<cr>
+
+"func! Csg()
+"	let csg = expand("<cword>")
+"	new
+"	exe "csc find g ".csg
+"	if getline(1) == " "
+"		exe "q!"
+"	endif
+"endfunc
+"nmap <F5> :call Csg( )<cr>
+
+
+
