@@ -50,6 +50,14 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
+
+" run :NERDtree  , tree search var
+Bundle 'scrooloose/nerdtree'
+" commenter
+Bundle 'scrooloose/nerdcommenter'
+" indent guilde
+Bundle 'nathanaelkane/vim-indent-guides'
+
 "Bundle 'file:///Users/gmarik/path/to/plugin'
 
 filetype plugin indent on
