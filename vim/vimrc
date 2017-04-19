@@ -66,6 +66,27 @@ language en_US.UTF-8
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
+
+
+"============================= VIM Scripts =================================
+" show function name ,  press f key
+function! ShowFuncName()
+  let lnum = line(".")
+  let col = col(".")
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+  echohl None
+  call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfunction
+map f :call ShowFuncName() <CR>
+
+
+" show function struct,  press hotkey 
+map g] <Esc>:exe "ptjump " . expand("<cword>")<Esc>
+map gt <Esc>:exe "pc" <Esc>
+map gl <Esc>:exe "ptlast" <Esc>
+
+
 "============================= INDENT =================================
 map <F4> <c-w><c-w> 
 
