@@ -17,8 +17,8 @@
 set formatoptions=croql
 set cindent
 
-set tabstop=2
-"set softtabstop=4
+set tabstop=8
+set softtabstop=2
 set shiftwidth=2
 set expandtab
   
@@ -28,6 +28,9 @@ set nowrap
 set bg=dark
 set ruler
 set number
+
+set fileencoding=utf-8
+
 " =========================== masterj color ============================
 "colo 256-jungle
 "colo blue 
@@ -49,7 +52,7 @@ Bundle 'rstacruz/sparkup', {'rtp':'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
 
 " run :NERDtree  , tree search var
 Bundle 'scrooloose/nerdtree'
@@ -65,7 +68,6 @@ filetype plugin indent on
 language en_US.UTF-8
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
-
 
 
 "============================= VIM Scripts =================================
