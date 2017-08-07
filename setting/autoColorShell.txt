@@ -1,0 +1,16 @@
+# color set
+export CLICOLOR=1
+#export LSCOLORS=ExFxCxDxBxegedabagacad
+#export LSCOLORS=dxfxcxdxbxegedabagacad
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+alias ls ='ls -G'
+
+#alias python=python3
+#alias 2='python2'
+#alias 3='python3'
+
+#alias gopi="~/ssh/mypi_tell.sh:"
+#alias gojavise="~/ssh/myjavise_tell.sh"
+#alias gojaguar="~/ssh/jaguar_tell.sh"
+
