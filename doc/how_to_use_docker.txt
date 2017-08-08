@@ -31,6 +31,7 @@ docker run -h mydock --name mydock -d -it ubuntu:14.04 /bin/bash
 #docker port fowerding and demon mode
 docker run -d -h mydock --name mydock -p 8022:22 -it ubuntu:14.04 /bin/bash
 
-
-
+#docker exec command to on load container 
+docker exec -i -t mydock /bin/bash
+docker exec mydock service ssh restart
 
