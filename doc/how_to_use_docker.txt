@@ -1,0 +1,36 @@
+# docker command, simple list
+
+
+#docker container list
+docker ps -a
+
+#docker image list
+docker images
+
+#docker container remove
+docker rm containername
+
+#docker images remove
+docker rmi imagename
+
+#docker image down
+docker pull imagesname
+
+#docker container stop | start
+docker stop | start containeranme
+
+#docker container to images 
+docker commit containername imagename
+
+# make and start to bash shell
+docker run -h mydock --name mydock -it ubunut:14.04 /bin/bash
+
+# docker -d   demon mode  make and start
+docker run -h mydock --name mydock -d -it ubuntu:14.04 /bin/bash
+
+#docker port fowerding and demon mode
+docker run -d -h mydock --name mydock -p 8022:22 -it ubuntu:14.04 /bin/bash
+
+
+
+
