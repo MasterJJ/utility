@@ -47,6 +47,7 @@ Bundle 'gmarik/vundle'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 "Original repos on  GitHub
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp':'vim/'}
 Bundle 'tpope/vim-rails.git'
@@ -69,6 +70,9 @@ language en_US.UTF-8
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
+
+"============================= NERDTree =================================
+let NERDTreeShowHidden = 1
 
 "============================= VIM Scripts =================================
 " show function name ,  press f key
