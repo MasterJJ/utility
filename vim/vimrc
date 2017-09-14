@@ -47,6 +47,7 @@ Bundle 'gmarik/vundle'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 "Original repos on  GitHub
 Bundle 'tpope/vim-fugitive'
+
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp':'vim/'}
@@ -61,6 +62,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 " indent guilde
 Bundle 'nathanaelkane/vim-indent-guides'
+" find file on NERDTree
+Bundle 'ctrlpvim/ctrlp.vim'
+
 
 "Bundle 'file:///Users/gmarik/path/to/plugin'
 
@@ -73,6 +77,12 @@ set laststatus=2
 
 "============================= NERDTree =================================
 let NERDTreeShowHidden = 1
+
+"============================= ctrlpvim  =================================
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\.git$\|public$\|log$\|tmp$\|vendor$',
+\ 'file': '\v\.(exe|so|dll)$'
+\ }
 
 "============================= VIM Scripts =================================
 " show function name ,  press f key
