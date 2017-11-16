@@ -20,5 +20,9 @@ alias gojavise="~/ssh/myjavise_tell.sh"
 alias gojaguar="~/ssh/jaguar_tell.sh"
 
 #!! function
-sgrep () { grep --color=always -nrI "$1" . | grep  -v '.svn'; }
+sfind () { find -name  "$1"; }
+sgrep () { grep --color=always -nrI "$1" . | grep  -v '.svn' | grep -v 'tags'; }
+fwamake () { make -j1 V=s; }
+fwamakeh () { nohup make -j1 V=s & }
+fwanmake () { make cl1870 platform=nowifi; }
 
