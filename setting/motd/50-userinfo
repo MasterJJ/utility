@@ -1,0 +1,7 @@
+#!/bin/sh
+printf "Working users... \n"
+printf "\n"
+w
+printf "Server Loads... \n"
+vmstat -w -t
+           
