@@ -1,0 +1,2 @@
+# masterj mac on  git auto command 
+source ~/.git-completion.bash
