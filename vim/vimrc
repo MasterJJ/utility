@@ -36,6 +36,9 @@ set fileencoding=utf-8
 "colo blue 
 "colo blackbeauty
 colo darkblack
+"============================= Plugin  =================================
+Plugin 'majutsushi/tagbar'
+
 "============================= Bundle  =================================
 set nocompatible
 filetype off
@@ -137,6 +140,7 @@ func! Css( )
 endfunc
 "nmap ,css :call Css( )<cr>
 nmap <F2> :call Css( )<cr>
+nmap <F8> :TagbarToggle<CR>
 
 func! Csc( )
 	let csc = expand("<cword>")
