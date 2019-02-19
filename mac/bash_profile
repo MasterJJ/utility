@@ -1,0 +1,46 @@
+#!! color set
+export CLICOLOR=1
+#export LSCOLORS=ExFxCxDxBxegedabagacad
+#export LSCOLORS=dxfxcxdxbxegedabagacad
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+
+#!! alias  set
+
+alias ll='ls -Gal'
+alias ls='ls -G'
+
+alias python=python3
+#alias 2='python2'
+#alias 3='python3'
+
+
+#!!  server 
+alias gopi="~/ssh/mypi_tell.sh"
+alias gopi3="~/ssh/mypi3_tell.sh"
+
+
+#!! function
+sgrep () { grep --color=always -nrI "$1" . | grep  -v '.svn' | grep -v 'tags'; }
+#!! function
+sfind () { find . -name  "$1"; }
+
+
+
+#system var
+eval "$(rbenv init -)"
+export PATH=/usr/local/bin:$PATH
+
+# masterj git auto completion
+source ~/.git-completion.bash
+
+# add adb for android path
+export PATH=${PATH}:/Users/masterj/Library/Android/sdk/tools:${PATH}:/Users/masterj/Library/Android/sdk/platform-tools
+# export PATH=${PATH}:/Users/UserId/library/android/sdk/tools:${PATH}:/Users/UserId/library/android/sdk/platform-tools
+
+# svn editor
+export SVN_EDITOR=vi
+
+
+# path
+export PATH="/usr/local/opt/node@6/bin:$PATH"
