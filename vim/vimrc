@@ -37,7 +37,7 @@ set fileencoding=utf-8
 "colo blackbeauty
 colo darkblack
 "============================= Plugin  =================================
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 
 "============================= Bundle  =================================
 set nocompatible
