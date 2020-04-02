@@ -1,0 +1,1 @@
+sudo vi  /etc/xdg/lxsession/LXDE-pi/autostart
