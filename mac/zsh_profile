@@ -1,0 +1,32 @@
+#!! color set
+export CLICOLOR=1
+#export LSCOLORS=ExFxCxDxBxegedabagacad
+#export LSCOLORS=dxfxcxdxbxegedabagacad
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+
+#!! alias  set
+
+alias ll='ls -Gal'
+alias ls='ls -G'
+
+alias python=python3
+#alias 2='python2'
+#alias 3='python3'
+
+
+#!!  server 
+alias gopi="~/ssh/mypi_tell.sh"
+alias gopi3="~/ssh/mypi3_tell.sh"
+
+
+#!! function
+sgrep () { grep --color=always -nrI "$1" . | grep  -v '.svn' | grep -v 'tags'; }
+#!! function
+sfind () { find . -name  "$1"; }
+
+
+
+#system var
+eval "$(rbenv init -)"
+export PATH=/usr/local/bin:$PATH
