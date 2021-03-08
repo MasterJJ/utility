@@ -25,7 +25,10 @@ sgrep () { grep --color=always -nrI "$1" . | grep  -v '.svn' | grep -v 'tags'; }
 #!! function
 sfind () { find . -name  "$1"; }
 
-
+# my git option 
+# too slow git enter for terminal mode
+# skip trace dirty file 
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 #system var
 eval "$(rbenv init -)"
