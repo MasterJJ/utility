@@ -1,0 +1,20 @@
+# check out my repo(fork)
+git clone git@github.com/myid/forkrepo
+
+#git add remote upstream repo
+git remote add upstream https://github.com/myid/orirepo
+
+# check remote info 
+git remote -v
+
+# git fetch start, get upstream info
+git fetch upstream  
+
+#git switch repo( switch branch to work branch)
+git checkout master
+
+# git merge ori repo branch to myu repo branch
+git merge upstream/master
+
+# push update to remote my repo
+git push origin master
