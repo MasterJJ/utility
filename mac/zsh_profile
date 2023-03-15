@@ -33,3 +33,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 #system var
 eval "$(rbenv init -)"
 export PATH=/usr/local/bin:$PATH
+
+
+
+## append  plugins
+plugins=(
+  git
+  autojump
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
