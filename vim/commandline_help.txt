@@ -1,0 +1,13 @@
+//////
+//    Function list  in  vim command line
+// 
+
+
+// replace char match
+// hello to be hi
+:%s/hello/hi/g – replace char this page
+
+:g/pattern/d – Remove lines matching pattern
+:g!/pattern/d – Remove lines that do NOT match the pattern
+:v/pattern/d – Also removes lines that do not match the pattern
+
