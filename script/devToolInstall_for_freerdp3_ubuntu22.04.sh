@@ -3,10 +3,9 @@
 
 
 echo "!! trouble shooting " 
+echo "!! some meet trouble first action  sudo apt update and upgrade " 
 
 echo "!!some issue dependancy remove by manual " 
-
-echo "!! sudo apt remove liegal-mesa0 " 
 
 echo "!! sudo apt remove libayatana-appindicator3-1 " 
 
