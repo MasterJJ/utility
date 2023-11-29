@@ -1,2 +1,6 @@
 # masterj mac on  git auto command 
 source ~/.git-completion.bash
+
+## update  for macos <sonoma
+echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
+source ~/.zshrc
