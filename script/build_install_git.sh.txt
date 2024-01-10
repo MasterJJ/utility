@@ -1,0 +1,12 @@
+
+sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+
+
+wget https://github.com/git/git/archive/refs/tags/v2.35.1.zip -O git.zip
+
+unzip git.zip
+cd git-*
+make prefix=/usr/local all
+
+sudo make prefix=/usr/local install
+
